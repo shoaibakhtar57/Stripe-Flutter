@@ -5,6 +5,7 @@ import 'package:flutter_stripe_payments/pages/home.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+//  print('JUST FOR TESTING');
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
