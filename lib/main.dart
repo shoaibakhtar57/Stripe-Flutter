@@ -1,23 +1,26 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_stripe_payments/pages/existing-cards.dart';
-import 'package:flutter_stripe_payments/pages/home.dart';
+// ignore_for_file: prefer_const_constructors
 
-void main() => runApp(MyApp());
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:stripe_app/homeScreen.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  Stripe.publishableKey =
+      "pk_test_51JnOylKB1mUKF8fdOp5xylpfglHJpvbVDqdQRqjWSzITmCiHB9NUdYweoxidCb8vtJ7EgF0ZuaHHjY8w9XVM2biD00mWkYpS78";
+
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
-//  print('JUST FOR TESTING');
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
-      ),
-      initialRoute: '/home',
-      routes: {
-        '/home': (context) => HomePage(),
-        '/existing-cards': (context) => ExistingCardsPage()
-      },
+      home: HomeScreen(),
     );
   }
 }
