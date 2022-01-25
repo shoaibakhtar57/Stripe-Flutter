@@ -1,4 +1,4 @@
-# stripe_app
+# Strip-Flutter
 
 This app is stripe(payment gateway) integration in Flutter using getx as state management
 
