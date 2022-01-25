@@ -1,6 +1,6 @@
 # stripe_app
 
-A new Flutter project.
+This app is stripe(payment gateway) integration in Flutter using getx as state management
 
 ## Getting Started
 
